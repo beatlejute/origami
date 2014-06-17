@@ -1,0 +1,41 @@
+/* Design */
+body {
+	text-align: center;
+	min-width: 900px;
+}
+/* Blocks */
+.block {
+	min-height: 10px;
+	overflow: hidden;
+	display: inline-table;
+	width: 100%;
+	min-height: 80px;
+}
+.wrapper {
+	width: 900px;
+	display: inline-block;
+}
+
+/* Areas */
+.area {
+	min-height: 10px;
+	margin: -1px;
+    position: relative;
+	display: table-cell;
+	vertical-align: top;
+	
+}
+.double > .area {
+	width: 50%;
+}
+.triple > .area {
+	width: 33.33%;
+}
+
+/* Elements */
+.element {
+	text-align: left;
+	padding: 15px;
+	overflow: hidden;
+	min-height: 40px;
+}
