@@ -828,7 +828,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='main' rel='stylesheet' type='text/css' href='http://casb1.cloudapp.net/106/042a2e22a661dee9a61a62c1281aef7c/LandingPage/editor/main.css' />");
+				structure = $("<link id='main' rel='stylesheet' type='text/css' href='http://beatlejute.github.io/origami/editor/main.css' />");
 				obj.append( structure );
 				return structure;
 			}
@@ -852,7 +852,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='elementscss' rel='stylesheet' type='text/css' href='http://casb1.cloudapp.net/106/042a2e22a661dee9a61a62c1281aef7c/LandingPage/editor/elements.css' />");
+				structure = $("<link id='elementscss' rel='stylesheet' type='text/css' href='http://beatlejute.github.io/origami/editor/elements.css' />");
 				obj.append( structure );
 				return structure;
 			}
