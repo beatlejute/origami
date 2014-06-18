@@ -11,7 +11,7 @@ function finishclean(param) {
 	code = code.replace(/^[\s\n]*/, ''); //leading space
 	code = code.replace(/[\s\n]*$/, ''); //trailing space
 
-	code = code.split('<stripscript ').join('<script ');
+	code = code.split('<stripscript').join('<script');
 	code = code.split('</stripscript>').join('</script>');
 	
 	param.callback(code);	

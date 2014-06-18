@@ -471,7 +471,7 @@ var library = {
 						return obj.attr('href');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'href', value );
+						return value ? obj.attr( 'href', value ) : obj.removeAttr('href');
 					},
 					"language": {
 						"ru": "Путь к связываемому файлу",
@@ -485,7 +485,7 @@ var library = {
 						return obj.attr('rel');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'rel', value );
+						return value ? obj.attr( 'rel', value ) : obj.removeAttr('rel');
 					},
 					"language": {
 						"ru": "Отношения между текущим документом и файлом (Rel)",
@@ -499,7 +499,7 @@ var library = {
 						return obj.attr('type');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'type', value );
+						return value ? obj.attr( 'type', value ) : obj.removeAttr('type');
 					},
 					"language": {
 						"ru": "MIME-тип данных (Type)",
@@ -513,7 +513,7 @@ var library = {
 						return obj.attr('charset') ? obj.attr('charset') : "";
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'charset', value );
+						return value ? obj.attr( 'charset', value ) : obj.removeAttr('charset');
 					},
 					"language": {
 						"ru": "Кодировка связываемого документа (charset)",
@@ -527,7 +527,7 @@ var library = {
 						return obj.attr('media');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'media', value );
+						return value ? obj.attr( 'media', value ) : obj.removeAttr('media');
 					},
 					"language": {
 						"ru": "Определяет устройство для стиля (media)",
@@ -568,7 +568,7 @@ var library = {
 						return obj.attr('name');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'name', value );
+						return value ? obj.attr( 'name', value ) : obj.removeAttr('name');
 					},
 					"language": {
 						"ru": "Название meta-тега",
@@ -582,7 +582,7 @@ var library = {
 						return obj.attr('content');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'content', value );
+						return value ? obj.attr( 'content', value ) : obj.removeAttr('content');
 					},
 					"language": {
 						"ru": "Значение (content)",
@@ -596,7 +596,7 @@ var library = {
 						return obj.attr('http-equiv');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'http-equiv', value );
+						return value ? obj.attr( 'http-equiv', value ) : obj.removeAttr('http-equiv');
 					},
 					"language": {
 						"ru": "HTTP заголовок (http-equiv)",
@@ -610,7 +610,7 @@ var library = {
 						return obj.attr('charset') ? obj.attr('charset') : "";
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'charset', value );
+						return value ? obj.attr( 'charset', value ) : obj.removeAttr('charset');
 					},
 					"language": {
 						"ru": "Кодировка документа (charset)",
@@ -651,7 +651,7 @@ var library = {
 						return obj.attr('src');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'src', value );
+						return value ? obj.attr( 'src', value ) : obj.removeAttr('src');
 					},
 					"language": {
 						"ru": "Ссылка на скрипт (URL)",
@@ -693,7 +693,7 @@ var library = {
 						return obj.attr('type');
 					},
 					"set": function( obj, value ) {
-						return obj.attr( 'type', value );
+						return value ? obj.attr( 'type', value ) : obj.removeAttr('type');
 					},
 					"language": {
 						"ru": "MIME-тип скрипта (Type)",
