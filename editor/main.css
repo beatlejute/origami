@@ -6,7 +6,7 @@ body {
 /* Blocks */
 .block {
 	min-height: 10px;
-	overflow: hidden;
+	overflow: inherit;
 	display: inline-table;
 	width: 100%;
 	min-height: 80px;
