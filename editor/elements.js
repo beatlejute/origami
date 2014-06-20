@@ -735,7 +735,7 @@ var library = {
 				return 'latest';
 			},
 			"add": function( obj ) {
-				structure = $("<stripscript id='jquery-latest' src='http://code.jquery.com/jquery-latest.min.js'></stripscript>");
+				structure = $("<stripscript id='jquery-latest' src='//code.jquery.com/jquery-latest.min.js'></stripscript>");
 				obj.append( structure );
 			}
 		},
@@ -758,7 +758,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<stripscript id='jquery-countdown' src='http://jquery-countdown.googlecode.com/svn/trunk/js/jquery.countdown.js'></stripscript>");
+				structure = $("<stripscript id='jquery-countdown' src='//jquery-countdown.googlecode.com/svn/trunk/js/jquery.countdown.js'></stripscript>");
 				obj.append( structure );
 			}
 		},
@@ -781,7 +781,7 @@ var library = {
 				return 'latest';
 			},
 			"add": function( obj ) {
-				structure = $("<stripscript id='slidesjs' src='http://slidesjs.com/js/jquery.slides.min.js'></stripscript>");
+				structure = $("<stripscript id='slidesjs' src='//slidesjs.com/js/jquery.slides.min.js'></stripscript>");
 				obj.append( structure );
 			}
 		},
@@ -804,7 +804,7 @@ var library = {
 				return 'latest';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='normalize' rel='stylesheet' type='text/css' href='http://necolas.github.io/normalize.css/latest/normalize.css' />");
+				structure = $("<link id='normalize' rel='stylesheet' type='text/css' href='//necolas.github.io/normalize.css/latest/normalize.css' />");
 				obj.append( structure );
 				return structure;
 			}
@@ -828,7 +828,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='main' rel='stylesheet' type='text/css' href='http://beatlejute.github.io/origami/editor/main.css' />");
+				structure = $("<link id='main' rel='stylesheet' type='text/css' href='//beatlejute.github.io/origami/editor/main.css' />");
 				obj.append( structure );
 				return structure;
 			}
@@ -852,7 +852,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='elementscss' rel='stylesheet' type='text/css' href='http://beatlejute.github.io/origami/editor/elements.css' />");
+				structure = $("<link id='elementscss' rel='stylesheet' type='text/css' href='//beatlejute.github.io/origami/editor/elements.css' />");
 				obj.append( structure );
 				return structure;
 			}
@@ -1069,8 +1069,7 @@ var library = {
 				},
 				"icon": "data:image/png;base64,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",
 				"screenshot": [
-					"http://sc.uploads.ru/cGOHL.png",
-					"http://sa.uploads.ru/wkFGl.png"
+					"url"
 				],
 				"version": "0.2"
 			},
