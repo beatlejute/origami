@@ -304,7 +304,7 @@ function generateMenuMainButtonSave() {
 		
 		removeEditorStyle();
 		
-		$('iframe#page').contents().find('stripscript').each(function( index ) {
+		$('iframe#page').contents().find('stripscript').each(function( index ) { console($(this));
 			
 			$('iframe#page').contents().find('body').append($(this));
 			
