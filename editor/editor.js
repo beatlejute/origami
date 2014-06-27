@@ -303,6 +303,13 @@ function generateMenuMainButtonSave() {
 	$('#menu #save').click(function() {
 		
 		removeEditorStyle();
+		
+		$('iframe#page').contents().find('stripscript').each(function( index ) {
+			
+			$('iframe#page').contents().find('body').append($(this));
+			
+		});
+		
 		cleanHTML({
 			'code': '<!DOCTYPE html><html>' + $('iframe#page').contents().find('html').html() + '</html>',
 			'callback': function(code) {
