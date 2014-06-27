@@ -2256,7 +2256,7 @@ var library = {
 					\n\
 					});\n\
 				";
-				$('iframe#page').contents().find( 'html' ).append('<script id="' + idName + 'code" defer></script>');
+				$('iframe#page').contents().find( 'html' ).append('<script id="' + idName + 'code" defer="defer"></script>');
 				$('iframe#page').contents().find( '#' + idName + 'code' ).html( script );
 				
 				return structure;
@@ -2421,7 +2421,7 @@ var library = {
 						},\n\
 					});\n\
 				";
-				$('iframe#page').contents().find( 'html' ).append('<script id="' + idName + 'code" defer></script>');
+				$('iframe#page').contents().find( 'html' ).append('<script id="' + idName + 'code" defer="defer"></script>');
 				$('iframe#page').contents().find( '#' + idName + 'code' ).html( script );
 				
 				return structure;
@@ -2734,7 +2734,7 @@ var library = {
 						}\n\
 					});\n\
 				";
-				$('iframe#page').contents().find( 'html' ).append('<script id="' + idName + 'code" defer></script>');
+				$('iframe#page').contents().find( 'html' ).append('<script id="' + idName + 'code" defer="defer"></script>');
 				$('iframe#page').contents().find( '#' + idName + 'code' ).html( script );
 				
 				return structure;
