@@ -297,20 +297,24 @@ function showEditorPopupWindow() {
 	$("#editorpopup").html('');
 }
 
+function moveElementsScripts() {
+	
+	$('iframe#page').contents().find('stripscript').each(function( index ) { console($(this));
+			
+		$('iframe#page').contents().find('body').append($(this));
+			
+	});
+		
+}
+
 function generateMenuMainButtonSave() {
 	
 	$('#menu > ul').append('<li id="save">' + library.language.menuSave[lang] + '</li>');
 	$('#menu #save').click(function() {
 		
 		removeEditorStyle();
-		
-		$('iframe#page').contents().find('stripscript').each(function( index ) { console($(this));
-			
-			$('iframe#page').contents().find('body').append($(this));
-			
-		});
-		
-		cleanHTML({
+		moveElementsScripts();
+		HTML({
 			'code': '<!DOCTYPE html><html>' + $('iframe#page').contents().find('html').html() + '</html>',
 			'callback': function(code) {
 				
@@ -342,6 +346,7 @@ function generateMenuMainButtonPreview() {
 	$('#menu #preview').click(function() {
 		
 		removeEditorStyle();
+		moveElementsScripts();
 		cleanHTML({
 			'code': '<!DOCTYPE html><html>' + $('iframe#page').contents().find('html').html() + '</html>',
 			'callback': function(code) {
