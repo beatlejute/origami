@@ -299,7 +299,7 @@ function showEditorPopupWindow() {
 
 function moveElementsScripts() {
 	
-	$('iframe#page').contents().find('stripscript').each(function( index ) { console.log($(this));
+	$('iframe#page').contents().find('body > stripscript').each(function( index ) { console.log($(this));
 			
 		$('iframe#page').contents().find('body').append($(this));
 			
