@@ -299,7 +299,7 @@ function showEditorPopupWindow() {
 
 function moveElementsScripts() {
 	
-	$('iframe#page').contents().find('body > stripscript').each(function( index ) { console.log($(this));
+	$('iframe#page').contents().find('body > stripscript').each(function( index ) {
 			
 		$('iframe#page').contents().find('body').append($(this));
 			
@@ -314,7 +314,7 @@ function generateMenuMainButtonSave() {
 		
 		removeEditorStyle();
 		moveElementsScripts();
-		HTML({
+		cleanHTML({
 			'code': '<!DOCTYPE html><html>' + $('iframe#page').contents().find('html').html() + '</html>',
 			'callback': function(code) {
 				
