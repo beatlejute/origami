@@ -735,7 +735,7 @@ var library = {
 				return 'latest';
 			},
 			"add": function( obj ) {
-				structure = $("<stripscript id='jquery-latest' src='//code.jquery.com/jquery-latest.min.js'></stripscript>");
+				structure = $("<stripscript id='jquery-latest' src='https://code.jquery.com/jquery-latest.min.js'></stripscript>");
 				obj.append( structure );
 			}
 		},
@@ -758,7 +758,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<stripscript id='jquery-countdown' src='//jquery-countdown.googlecode.com/svn/trunk/js/jquery.countdown.js'></stripscript>");
+				structure = $("<stripscript id='jquery-countdown' src='https://jquery-countdown.googlecode.com/svn/trunk/js/jquery.countdown.js'></stripscript>");
 				obj.append( structure );
 			}
 		},
@@ -781,7 +781,7 @@ var library = {
 				return 'latest';
 			},
 			"add": function( obj ) {
-				structure = $("<stripscript id='slidesjs' src='//slidesjs.com/js/jquery.slides.min.js'></stripscript>");
+				structure = $("<stripscript id='slidesjs' src='https://slidesjs.com/js/jquery.slides.min.js'></stripscript>");
 				obj.append( structure );
 			}
 		},
@@ -804,7 +804,7 @@ var library = {
 				return 'latest';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='normalize' rel='stylesheet' type='text/css' href='//necolas.github.io/normalize.css/latest/normalize.css' />");
+				structure = $("<link id='normalize' rel='stylesheet' type='text/css' href='https://necolas.github.io/normalize.css/latest/normalize.css' />");
 				obj.append( structure );
 				return structure;
 			}
@@ -828,7 +828,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='main' rel='stylesheet' type='text/css' href='//beatlejute.github.io/origami/editor/main.css' />");
+				structure = $("<link id='main' rel='stylesheet' type='text/css' href='https://beatlejute.github.io/origami/editor/main.css' />");
 				obj.append( structure );
 				return structure;
 			}
@@ -852,7 +852,7 @@ var library = {
 				return '';
 			},
 			"add": function( obj ) {
-				structure = $("<link id='elementscss' rel='stylesheet' type='text/css' href='//beatlejute.github.io/origami/editor/elements.css' />");
+				structure = $("<link id='elementscss' rel='stylesheet' type='text/css' href='https://beatlejute.github.io/origami/editor/elements.css' />");
 				obj.append( structure );
 				return structure;
 			}
