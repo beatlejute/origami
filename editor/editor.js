@@ -258,7 +258,7 @@ function sortingElementEnable() {
 
 		},
 		placeholder: "portlet-placeholder"
-	}).disableSelection();
+	}); //.disableSelection();
 
 }
 
