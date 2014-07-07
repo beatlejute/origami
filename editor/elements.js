@@ -299,7 +299,7 @@ var library = {
 		"multiple": {
 			"edit": function( elementId, elem, obj, editlabel, editid, editclass, editvalue ) {
 				
-				var onload =  "<script>$('#" + editid + "').sortable().disableSelection();</script>";
+				var onload =  "<script>$('#" + editid + "').sortable();</script>";
 
 				var ret = '<li class="type' + elem.name + '"><label for="' + editid + '">' + editlabel + '</label> <ul id="' + editid + '" class="' + elem.name + '">';
 				var mselector = '';
