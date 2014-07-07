@@ -9,11 +9,12 @@ body {
 	overflow: inherit;
 	display: inline-table;
 	width: 100%;
-	min-height: 80px;
+	height: 80px;
 }
 .wrapper {
 	width: 900px;
 	display: inline-block;
+	height: auto;
 }
 
 /* Areas */
