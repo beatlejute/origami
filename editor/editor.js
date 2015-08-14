@@ -441,7 +441,7 @@ function linkLabelToElement( label, element, dictionary, elementTypeIndex) {
 	
 }
 
-function generateLabelsList( label ) {console.log(j);
+function generateLabelsList( label ) {
 	
 	var labelObj = $(label);
 	var linkIndex = labelObj[0].link;
@@ -473,7 +473,7 @@ function generateLabelsList( label ) {console.log(j);
 				
 		if(library[dictionary][elementTypeIndex].area) {
 			$(label + ' > ul > .' + index ).append("<ul></ul>" );
-			for(j = 0; j < library[dictionary][elementTypeIndex].area.length; j++ ) {
+			for(var j = 0; j < library[dictionary][elementTypeIndex].area.length; j++ ) {
 				
 				elementIdAttrSelector = elementIdAttr ? "#" + elementIdAttr : "";
 				
