@@ -441,7 +441,7 @@ function linkLabelToElement( label, element, dictionary, elementTypeIndex) {
 	
 }
 
-function generateLabelsList( label ) {
+function generateLabelsList( label ) {console.log(j);
 	
 	var labelObj = $(label);
 	var linkIndex = labelObj[0].link;
