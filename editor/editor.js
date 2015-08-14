@@ -480,7 +480,7 @@ function generateLabelsList( label ) {
 				if(library[dictionary][elementTypeIndex].area[j].selector) {
 					areaSelector = library[dictionary][elementTypeIndex].area[j].name;
 					childLabel = label + ' > ul > .' + index + ' > ul > ' + library[dictionary][elementTypeIndex].area[j].selector;
-					areaElement = element.find( library[dictionary][elementTypeIndex].area[j].selector );
+					areaElement = element.find( '> ' + library[dictionary][elementTypeIndex].area[j].selector );
 				}
 				else {
 					areaSelector = "area";
