@@ -489,8 +489,7 @@ function generateLabelsList( label ) {
 				}
 				
 				$(label + ' > ul > .' + index + ' > ul').append("<li class='" + areaSelector + "'>" + library[dictionary][elementTypeIndex].area[j].language[lang] + "</li>" );
-				
-				console.log(childLabel);
+
 				linkLabelToElement( $(childLabel), areaElement, dictionary, elementTypeIndex);
 				
 				generateLabelsList( childLabel );
