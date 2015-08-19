@@ -103,6 +103,7 @@ function generateOpenOptionFile() {
 }
 function openCode( framecode ) {
 
+	framecode = framecode.split('<script>').join('<stripscript>');
 	framecode = framecode.split('<script ').join('<stripscript ');
 	framecode = framecode.split('</script>').join('</stripscript>');
 	
