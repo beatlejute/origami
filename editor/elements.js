@@ -555,7 +555,7 @@ var library = {
 				var tmp;
 				if(obj.attr('name')) tmp = obj.attr('name');
 				if(obj.attr('charset') && !tmp) tmp = 'charset';
-				if(obj.attr('http-equiv') && !tmp) tmp = 'http-equiv';				
+				if(obj.attr('http-equiv') && !tmp) tmp = obj.attr('http-equiv');				
 				return tmp;
 			},
 			"add": function( obj ) {
