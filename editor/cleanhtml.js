@@ -14,6 +14,12 @@ function finishclean(param) {
 	code = code.split('<stripscript').join('<script');
 	code = code.split('</stripscript>').join('</script>');
 	
+	/* del strip of php code */
+	code = code.split('&lt;?').join('<?');
+	code = code.split('?&gt;').join('?>');
+	code = code.split('<!--?').join('<?');
+	code = code.split('?-->').join('?>');
+	
 	param.callback(code);	
 
 	level = 0;
