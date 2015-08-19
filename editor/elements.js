@@ -640,7 +640,7 @@ var library = {
 				tmp = obj.attr('src') ? obj.attr('src') : "";
 				tmp = tmp.split("/");
 				tmp = tmp[tmp.length-1];
-				if(!tmp) tmp = obj.html().substr(0,50));
+				if(!tmp) tmp = obj.html().substr(0,50);
 				return tmp;
 			},
 			"add": function( obj ) {
