@@ -552,6 +552,7 @@ var library = {
 			},
 			"selector": "meta",
 			"title": function( obj ) {
+				var tmp;
 				if(obj.attr('name')) tmp = obj.attr('name');
 				if(obj.attr('charset') && !tmp) tmp = 'charset';
 				if(obj.attr('http-equiv') && !tmp) tmp = 'http-equiv';				
