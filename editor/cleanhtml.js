@@ -83,7 +83,7 @@ function cleanHTML(param) {
 				out = placeTag(tag + '>', out);
 			} else if ('?' == tag[1]) {
 				out += tag + '>\n';
-			} else if (t = tag.match(/^<(script|style)/i)) {
+			} else if (t = tag.match(/^<(script|stripscript|style)/i)) {
 				t[1] = t[1].toLowerCase();
 				tag = cleanTag(tag);
 				out = placeTag(tag, out);
@@ -159,7 +159,7 @@ var ownLine = ['area', 'body', 'head', 'hr', 'i?frame', 'link', 'meta',
 
 //opening tag, contents, and closing tag get their own line
 //(i.e. line before opening, after closing)
-var contOwnLine = ['li', 'dt', 'dt', 'h[1-6]', 'option', 'script'];
+var contOwnLine = ['li', 'dt', 'dt', 'h[1-6]', 'option', 'script', 'stripscript'];
 
 //line will go before these tags
 var lineBefore = new RegExp(
