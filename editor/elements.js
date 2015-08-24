@@ -1060,6 +1060,40 @@ var library = {
 		
 		
 		{
+			"name": "block noindex",
+			"language": {
+				"ru": "Неиндексируемый блок",
+				"en": "Noindex block"
+			},
+			"info": {
+				"author": "Denis V. Kiyko",
+				"description": {
+					"ru": "Данный блок представляет из себя контейнер для размещения других элементов. По сути это тег noindex.",
+					"en": "This block is a noindex container for other elements."
+				},
+				"icon": "data:image/png;base64,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",
+				"version": "0.1"
+			},
+			"selector": "noindex",
+			"add": function( obj ) {
+				structure = $("<noindex></noindex>");
+				obj.append( structure );
+				return structure;
+			},
+			"area": [
+				{
+					"name": "area",
+					"selector": "",
+					"language": {
+						"ru": "Содержимое",
+						"en": "Content"
+					}
+				}
+			]
+		},
+		
+		
+		{
 			"name": "element text",
 			"language": {
 				"ru": "Текст",

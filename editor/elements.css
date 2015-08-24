@@ -12,6 +12,11 @@
 	overflow: auto;
 }
 
+/* Noindex */
+noindex {
+	border: 1px dashed #F9D670;
+}
+
 /* Form */
 .form {
 	text-align: center;
