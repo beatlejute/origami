@@ -175,7 +175,7 @@ function removeEditorStyle() {
 
 function overElements() {
 	
-	$('iframe#page').contents().find('.element, .block, .area')
+	$('iframe#page').contents().find('.element, .block, .area, noindex')
 	.mouseover(function(event) {
 		event.stopPropagation();
 		markOverElements( $(this), links[$(this)[0].link].label );
@@ -195,7 +195,7 @@ function overElements() {
 }
 function clearOverElements() {
 	
-	$('iframe#page').contents().find('.element, .block, .area').removeAttr('over');
+	$('iframe#page').contents().find('.element, .block, .area, noindex').removeAttr('over');
 	$('#labels li').removeAttr('over');
 	
 }
