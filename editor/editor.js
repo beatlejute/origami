@@ -122,7 +122,7 @@ function openCode( framecode ) {
 			event.stopPropagation();
 			generatePopupElementEdit( $(this) );
 		});
-		$($('iframe#page').contents()).on('click', '.element, .block, .area', function(event){
+		$($('iframe#page').contents()).on('click', '.element, .block, .area, noindex', function(event){
 			event.stopPropagation();
 			generatePopupElementEdit( $(this) );
 		});
