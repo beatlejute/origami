@@ -15,6 +15,11 @@
 /* Noindex */
 noindex {
 	border: 1px dashed #F9D670;
+	overflow: inherit;
+	display: inline-table;
+	width: 100%;
+	min-height: 80px;
+	height: 80px;
 }
 
 /* Form */
