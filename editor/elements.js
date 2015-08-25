@@ -1129,7 +1129,7 @@ var library = {
 					},
 					"set": function( obj, value ) {
 						if(!obj.length && value) {
-							structure = $("<h2>" + value + "</ph2>");
+							structure = $("<h2>" + value + "</h2>");
 							$(obj.context).prepend( structure );
 						} else {
 							if(value) {
@@ -1188,7 +1188,7 @@ var library = {
 					"en": "It is simple element for transfers such as benefits or reviewed. You may use newline in 'text' field, it change to BR HTML tag."
 				},
 				"icon": "data:image/png;base64,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",
-				"version": "0.2"
+				"version": "0.3"
 			},
 			"selector": ".element.list",
 			"add": function( obj ) {
@@ -1221,7 +1221,16 @@ var library = {
 						return obj.html();
 					},
 					"set": function( obj, value ) {
-						obj.html( value );
+						if(!obj.length && value) {
+							structure = $("<h2>" + value + "</h2>");
+							$(obj.context).find( ' > img' ).after( structure );
+						} else {
+							if(value) {
+								obj.html( value );
+							} else {
+								obj.remove();
+							}
+						}
 					},
 					"language": {
 						"ru": "Заголовок",
@@ -1239,7 +1248,16 @@ var library = {
 						return obj.html();
 					},
 					"set": function( obj, value ) {
-						obj.html( value );
+						if(!obj.length && value) {
+							structure = $("<p>" + value + "</p>");
+							$(obj.context).append( structure );
+						} else {
+							if(value) {
+								obj.html( value );
+							} else {
+								obj.remove();
+							}
+						}
 					},
 					"language": {
 						"ru": "Текст",
@@ -1263,7 +1281,7 @@ var library = {
 					"en": ""
 				},
 				"icon": "data:image/png;base64,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",
-				"version": "0.2"
+				"version": "0.3"
 			},
 			"selector": ".element.icon",
 			"add": function( obj ) {
@@ -1296,7 +1314,16 @@ var library = {
 						return obj.html();
 					},
 					"set": function( obj, value ) {
-						obj.html( value );
+						if(!obj.length && value) {
+							structure = $("<h2>" + value + "</h2>");
+							$(obj.context).find( ' > img' ).after( structure );
+						} else {
+							if(value) {
+								obj.html( value );
+							} else {
+								obj.remove();
+							}
+						}
 					},
 					"language": {
 						"ru": "Заголовок",
@@ -1314,7 +1341,16 @@ var library = {
 						return obj.html();
 					},
 					"set": function( obj, value ) {
-						obj.html( value );
+						if(!obj.length && value) {
+							structure = $("<p>" + value + "</p>");
+							$(obj.context).append( structure );
+						} else {
+							if(value) {
+								obj.html( value );
+							} else {
+								obj.remove();
+							}
+						}
 					},
 					"language": {
 						"ru": "Текст",
@@ -1461,50 +1497,15 @@ var library = {
 					"en": ""
 				},
 				"icon": "data:image/png;base64,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",
-				"version": "0.2"
+				"version": "0.3"
 			},
 			"selector": ".element.form",
 			"add": function( obj ) {
-				structure = $("<div class='element form'><h2>Title</h2><p>Text</p><form action='' metod='post'><ul><li><input type='text' name='input' placeholder='Field 1' value='' /></li><li><input type='submit' name='submit' value='Send' /></li></ul></form><p>Text</p></div>");
+				structure = $("<div class='element form'><form action='' metod='post'><ul><li><input type='text' name='input' placeholder='Field 1' value='' /></li><li><input type='submit' name='submit' value='Send' /></li></ul></form></div>");
 				obj.append( structure );
 				return structure;
 			},
 			"properties": [
-				{
-					"name": "title",
-					"type": "text",
-					"select": function( obj ) {
-						return obj.find( ' > h2' );
-					},
-					"get": function( obj ) {
-						return obj.html();
-					},
-					"set": function( obj, value ) {
-						obj.html( value );
-					},
-					"language": {
-						"ru": "Заголовок",
-						"en": "Title"
-					}
-				},
-				{
-					"name": "textup",
-					"type": "textarea",
-					"wordwrap": true,
-					"select": function( obj ) {
-						return obj.find( ' > p:first-of-type' );
-					},
-					"get": function( obj ) {
-						return obj.html();
-					},
-					"set": function( obj, value ) {
-						obj.html( value );
-					},
-					"language": {
-						"ru": "Текст над формой",
-						"en": "Text above form"
-					}
-				},
 				{
 					"name": "formaction",
 					"type": "text",
@@ -2253,24 +2254,6 @@ var library = {
 					"language": {
 						"ru": "Поля формы",
 						"en": "Filds"
-					}
-				},
-				{
-					"name": "textdown",
-					"type": "textarea",
-					"wordwrap": true,
-					"select": function( obj ) {
-						return obj.find( ' > p:last-of-type' );
-					},
-					"get": function( obj ) {
-						return obj.html();
-					},
-					"set": function( obj, value ) {
-						obj.html( value );
-					},
-					"language": {
-						"ru": "Текст под формой",
-						"en": "Text below form"
 					}
 				}
 			]
