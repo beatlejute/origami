@@ -1109,7 +1109,7 @@ var library = {
 				"screenshot": [
 					"url"
 				],
-				"version": "0.2"
+				"version": "0.3"
 			},
 			"selector": ".element.text",
 			"add": function( obj ) {
@@ -1128,7 +1128,16 @@ var library = {
 						return obj.html();
 					},
 					"set": function( obj, value ) {
-						obj.html( value );
+						if(!obj.length && value) {
+							structure = $("<h2>" + value + "</ph2>");
+							$(obj.context).prepend( structure );
+						} else {
+							if(value) {
+								obj.html( value );
+							} else {
+								obj.remove();
+							}
+						}
 					},
 					"language": {
 						"ru": "Заголовок",
@@ -1146,7 +1155,16 @@ var library = {
 						return obj.html();
 					},
 					"set": function( obj, value ) {
-						obj.html( value );
+						if(!obj.length && value) {
+							structure = $("<p>" + value + "</p>");
+							$(obj.context).append( structure );
+						} else {
+							if(value) {
+								obj.html( value );
+							} else {
+								obj.remove();
+							}
+						}
 					},
 					"language": {
 						"ru": "Текст",
