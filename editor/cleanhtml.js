@@ -20,6 +20,8 @@ function finishclean(param) {
 	code = code.split('<!--?').join('<?');
 	code = code.split('?-->').join('?>');
 	
+	code = code.split('<body link="1">').join('<body>');
+	
 	param.callback(code);	
 
 	level = 0;
@@ -70,7 +72,7 @@ function cleanHTML(param) {
 			start = point;
 
 			//find the end of the tag
-			while (point < code.length && '>' != code.charAt(point)) point++;
+			while (point < code.length && ('>' != code.charAt(point) || '?' == code.charAt(point-1))) point++;
 			tag = code.substr(start, point - start);
 			i = point;
 
