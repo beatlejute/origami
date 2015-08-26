@@ -1497,7 +1497,7 @@ var library = {
 					"en": ""
 				},
 				"icon": "data:image/png;base64,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",
-				"version": "0.3"
+				"version": "0.4"
 			},
 			"selector": ".element.form",
 			"add": function( obj ) {
@@ -1527,8 +1527,8 @@ var library = {
 					"name": "form",
 					"type": "multiple",
 					"multiple": {
-						"selector": ["input"],
-						"structure": ["<input />"],
+						"selector": ["input","textarea"],
+						"structure": ["<input />","<textarea></textarea>"],
 						"attribute": [
 							[
 								{
@@ -2236,12 +2236,46 @@ var library = {
 										"en": "Read only (readonly)"
 									}
 								}
+							],
+							[
+								{
+									"name": "name",
+									"type": "text",
+									"get": function( obj ) {
+										return obj.attr('name');
+									},
+									"set": function( obj, value ) {
+										obj.attr('name', value);
+									},
+									"language": {
+										"ru": "Имя поля textarea",
+										"en": "Name of textarea field"
+									}
+								},
+								{
+									"name": "value",
+									"type": "text",
+									"get": function( obj ) {
+										return obj.html();
+									},
+									"set": function( obj, value ) {
+										obj.html(value);
+									},
+									"language": {
+										"ru": "Значение поля",
+										"en": "Field value"
+									}
+								}
 							]
 						],
 						"language": [
 							{
 								"ru": "Поле формы",
 								"en": "Field of form"
+							},
+							{
+								"ru": "Текстовое поле (textarea)",
+								"en": "Text area"
 							}
 						]
 					},
