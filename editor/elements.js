@@ -2265,6 +2265,87 @@ var library = {
 										"ru": "Значение поля",
 										"en": "Field value"
 									}
+								},
+								{
+									"name": "maxlength",
+									"type": "text",
+									"get": function( obj ) {
+										return obj.attr('maxlength') || '';
+									},
+									"set": function( obj, value ) {
+										if(value) obj.attr('maxlength', value);
+										else obj.removeAttr('maxlength');
+									},
+									"language": {
+										"ru": "Максимальное количество символов (maxlength)",
+										"en": "Maximum number of characters (maxlength)"
+									}
+								},
+								{
+									"name": "required",
+									"type": "checkbox",
+									"get": function( obj ) {
+										return (obj.attr('required')=='required') ? true : false;
+									},
+									"set": function( obj, value ) {
+										if(value) {
+											value = 'required';
+											obj.attr('required', value);
+										} else obj.removeAttr('required');
+									},
+									"language": {
+										"ru": "Обязательное поле (required)",
+										"en": "Required feild (required)"
+									}
+								},
+								{
+									"name": "placeholder",
+									"type": "text",
+									"get": function( obj ) {
+										return obj.attr('placeholder') || '';
+									},
+									"set": function( obj, value ) {
+										if(value) obj.attr('placeholder', value);
+										else obj.removeAttr('placeholder');
+									},
+									"language": {
+										"ru": "Подсказывающий текст (placeholder)",
+										"en": "Help text (placeholder)"
+									}
+								},
+								{
+									"name": "disabled",
+									"type": "checkbox",
+									"get": function( obj ) {
+										return (obj.attr('disabled')=='disabled') ? true : false;
+									},
+									"set": function( obj, value ) {
+										if(value) {
+											value = 'disabled';
+											obj.attr('disabled', value);
+										} else obj.removeAttr('disabled');
+									},
+									"language": {
+										"ru": "Отключен (disabled)",
+										"en": "Disabled (disabled)"
+									}
+								},
+								{
+									"name": "readonly",
+									"type": "checkbox",
+									"get": function( obj ) {
+										return (obj.attr('readonly')=='readonly') ? true : false;
+									},
+									"set": function( obj, value ) {
+										if(value) {
+											value = 'readonly';
+											obj.attr('readonly', value);
+										} else obj.removeAttr('readonly');
+									},
+									"language": {
+										"ru": "Только для чтения (readonly)",
+										"en": "Read only (readonly)"
+									}
 								}
 							]
 						],
