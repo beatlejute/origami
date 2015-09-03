@@ -108,8 +108,8 @@ function openCode( framecode ) {
 	framecode = framecode.split('</script>').join('</stripscript>');
 	
 	/* strip php code */
-	framecode = framecode.split('<?').join('&lt;?');
-	framecode = framecode.split('?>').join('?&gt;');
+	framecode = framecode.split('<?').join('<!--?');
+	framecode = framecode.split('?>').join('?-->');
 	
 	//$('iframe#page').attr( 'src', 'data:text/html;charset=utf-8,' + framecode ); // Нельзя использовать Data
 	$('iframe#page').attr( 'srcdoc', framecode );
