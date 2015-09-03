@@ -11,14 +11,21 @@ function finishclean(param) {
 	code = code.replace(/^[\s\n]*/, ''); //leading space
 	code = code.replace(/[\s\n]*$/, ''); //trailing space
 
+	/* del strip scripts code */
 	code = code.split('<stripscript').join('<script');
 	code = code.split('</stripscript>').join('</script>');
+	
+	/* del strip iframe code */
+	code = code.split('<stripiframe').join('<iframe');
+	code = code.split('</stripiframe>').join('</iframe>');
 	
 	/* del strip of php code */
 	code = code.split('&lt;?').join('<?');
 	code = code.split('?&gt;').join('?>');
 	code = code.split('<!--?').join('<?');
 	code = code.split('?-->').join('?>');
+	code = code.split('&lt;!--?').join('<?');
+	code = code.split('?--&gt;').join('?>');
 	
 	code = code.split('<body link="1">').join('<body>');
 	

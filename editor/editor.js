@@ -103,13 +103,19 @@ function generateOpenOptionFile() {
 }
 function openCode( framecode ) {
 
+	/* strip scripts code */
 	framecode = framecode.split('<script>').join('<stripscript>');
 	framecode = framecode.split('<script ').join('<stripscript ');
 	framecode = framecode.split('</script>').join('</stripscript>');
 	
+	/* strip iframe code */
+	framecode = framecode.split('<iframe>').join('<stripiframe>');
+	framecode = framecode.split('<iframe ').join('<stripiframe ');
+	framecode = framecode.split('</iframe>').join('</stripiframe>');
+	
 	/* strip php code */
-	framecode = framecode.split('<?').join('&lt;?');
-	framecode = framecode.split('?>').join('?&gt;');
+	framecode = framecode.split('<?').join('<!--?');
+	framecode = framecode.split('?>').join('?-->');
 	
 	//$('iframe#page').attr( 'src', 'data:text/html;charset=utf-8,' + framecode ); // Нельзя использовать Data
 	$('iframe#page').attr( 'srcdoc', framecode );
