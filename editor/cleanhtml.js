@@ -79,7 +79,7 @@ function cleanHTML(param) {
 			start = point;
 
 			//find the end of the tag
-			while (point < code.length && ('>' != code.charAt(point) || '?' == code.charAt(point-1))) point++;
+			while (point < code.length && ('>' != code.charAt(point) || '?' == code.charAt(point-1) || '-' == code.charAt(point-1))) point++;
 			tag = code.substr(start, point - start);
 			i = point;
 
